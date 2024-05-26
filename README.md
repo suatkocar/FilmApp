@@ -59,6 +59,7 @@ FilmApp is a React-based web application designed to manage and display a collec
 4. Create a `.env` file in the root directory and add your TMDb API key:
 
    ```env
+   VITE_API_BASE_URL=FilmRestful_api_url_here
    VITE_TMDB_API_KEY=your_api_key_here
    ```
 
