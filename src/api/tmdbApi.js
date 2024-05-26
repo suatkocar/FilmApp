@@ -3,7 +3,7 @@ import axios from "axios";
 // Constants for API key and base URL for The Movie Database (TMDb) API.
 // This API key is stored in an environment variable for security.
 
-const API_KEY = import.meta.env.TMDB_API_KEY;
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 const BASE_URL = "https://api.themoviedb.org/3";
 
 // Create a configured instance of axios with base URL and default parameters
