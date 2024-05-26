@@ -96,7 +96,7 @@ To run the proxy server:
 node server.js
 ```
 
-The proxy server will be available at `http://localhost:5000`.
+The proxy server will be available at `http://localhost:3000`.
 
 ## Usage
 
@@ -119,9 +119,6 @@ FilmApp
 │       ├── audio
 │       ├── images
 │       └── json
-├── screenshots
-│   ├── home-page.jpg
-│   ├── film-list-page.jpg
 ├── src
 │   ├── api
 │   ├── components
