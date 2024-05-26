@@ -1,0 +1,133 @@
+.Film-cards-area {
+  padding-bottom: 30px;
+}
+
+.film-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.film-card {
+  border: 1px solid #ccc;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  background-color: black;
+  color: white;
+}
+
+.film-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.2) drop-shadow(0 0 6px #f00) drop-shadow(0 0 10px #f00);
+}
+
+.filmPoster {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.film-card:hover .filmPoster {
+  opacity: 0.5;
+}
+
+.playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 25px;
+  font-size: 24px;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1;
+}
+
+.film-card:hover .playButton {
+  opacity: 1;
+}
+
+.playButton:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  background-color: #f00;
+}
+
+.load-more-button {
+  display: block;
+  margin: 30px auto;
+  padding: 24px 60px;
+  background-color: #f00;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0px 8px 16px rgb(0, 0, 0);
+}
+
+.load-more-button:hover {
+  background-color: #ffffff;
+  color: #f00;
+  transform: translateY(-2px);
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  filter: brightness(1.2) drop-shadow(0 0 6px #f00) drop-shadow(0 0 10px #f00);
+}
+
+@media (max-width: 1024px) {
+  .film-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  display: flex;
+}
+
+.loading-overlay.visible {
+  visibility: visible;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  filter: brightness(1.2) drop-shadow(0 0 6px #f00) drop-shadow(0 0 10px #f00);
+  border: 8px solid rgba(255, 255, 255, 0.3);
+  border-top: 8px solid #ffffff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

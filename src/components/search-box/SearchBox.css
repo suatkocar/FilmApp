@@ -1,0 +1,35 @@
+.search-box {
+    position: relative;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#film-search-input {
+	  margin-top: 30px;
+    width: 31.5%;
+    height: 52px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    background-color: white;
+    color: #333;
+    transition: all 0.3s ease;
+    
+}
+
+#film-search-input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+#film-search-input:focus {
+	border: 10px solid #FFF;
+    border-color: #FFF;
+    box-shadow: 0 0 10px rgba(0, 216, 254, 0.5);
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding: 25px 10px;
+}

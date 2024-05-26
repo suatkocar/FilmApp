@@ -1,0 +1,210 @@
+body,
+html {
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  background-color: #fff;
+  background-image: url(/assets/images/film-list-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.modal-backdrop {
+  visibility: hidden;
+}
+
+.modal-content {
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.filmListContainer {
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.96);
+  border-radius: 50px;
+  padding: 20px;
+  font-size: 1.1rem;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.custom-select {
+  width: auto;
+  display: inline-block;
+}
+
+.custom-select-wrapper {
+  position: relative;
+  width: 50%;
+  display: flex;
+  margin-left: 120px;
+}
+
+.custom-select-wrapper::after {
+  content: "\2304";
+  position: absolute;
+  left: 75%;
+  top: 45%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.search-bar .form-control,
+.search-bar .btn {
+  flex-grow: 1;
+  margin: 2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 8px;
+}
+
+.search-bar .btn {
+  white-space: nowrap;
+  overflow: hidden;
+  min-width: 160px;
+  margin-left: 8px;
+}
+
+.search-bar .ms-2 {
+  margin-left: 8px;
+  width: 300px;
+}
+
+.formatSelector {
+  margin-top: 20px;
+}
+
+.add-new-film-button {
+  margin-top: 20px;
+}
+
+.table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.editButton,
+.deleteButton {
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 5px;
+  width: 100px;
+  height: 42px;
+}
+
+.img-thumbnail {
+  padding: 0 !important;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  vertical-align: middle;
+}
+
+.table th.poster,
+.table td.poster {
+  width: 10%;
+}
+.table th.id,
+.table td.id {
+  width: 10%;
+}
+.table th.title,
+.table td.title {
+  width: 10%;
+}
+.table th.year,
+.table td.year {
+  width: 10%;
+}
+.table th.director,
+.table td.director {
+  width: 10%;
+}
+.table th.stars,
+.table td.stars {
+  width: 10%;
+}
+.table th.review,
+.table td.review {
+  width: 40%;
+  text-align: justify;
+}
+.table th.actions,
+.table td.actions {
+  width: 5%;
+}
+
+.poster {
+  cursor: pointer;
+}
+
+.poster:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1040;
+  display: none;
+}
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  display: flex;
+}
+
+.loading-overlay.visible {
+  visibility: visible;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  filter: brightness(1.2) drop-shadow(0 0 6px #f00) drop-shadow(0 0 10px #f00);
+  border: 8px solid rgba(255, 255, 255, 0.3);
+  border-top: 8px solid #ffffff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
