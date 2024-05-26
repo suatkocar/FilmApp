@@ -1,4 +1,4 @@
-# FilmApp (React Web Application)
+# FilmApp (JavaScript Web Application)
 
 ## Home Page
 
