@@ -66,7 +66,7 @@ FilmApp is a React-based web application designed to manage and display a collec
 5. Set up the [FilmRestful](https://github.com/suatkocar/FilmRestful) backend project:
 
 - Follow the instructions in the FilmRestful README to set up the project and configure the database.
-- Ensure the FilmRestful project is running and accessible at the provided API URLs in the .env file.
+- Ensure the FilmRestful project is running and accessible at the provided API URL in the .env file.
 
 ### Development
 
