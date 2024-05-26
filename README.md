@@ -19,7 +19,6 @@ FilmApp is a React-based web application designed to manage and display a collec
 - Dynamic Homepage: The homepage features a hero slider that displays a random selection of movies, along with an AJAX-powered search bar for immediate interaction.
 - Pagination: To maintain site responsiveness and manage database query efficiency, the film list page initially displays only 24 films and provides pagination for exploring more films.
 - Flexible Data Formats: The application supports various data formats (JSON, XML, TEXT) for displaying film data, ensuring versatility in data handling.
-- Responsive Design: The application is built with responsiveness in mind, providing a consistent user experience across different devices.
 
 ## Technologies Used
 
@@ -62,6 +61,11 @@ FilmApp is a React-based web application designed to manage and display a collec
    ```env
    VITE_TMDB_API_KEY=your_api_key_here
    ```
+
+5. Set up the [FilmRestful](https://github.com/suatkocar/FilmRestful) backend project:
+
+- Follow the instructions in the FilmRestful README to set up the project and configure the database.
+- Ensure the FilmRestful project is running and accessible at the provided API URLs in the .env file.
 
 ### Development
 
