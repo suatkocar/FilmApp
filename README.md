@@ -10,21 +10,25 @@
 
 ## Project Overview
 
-FilmApp is a React-based web application for managing and displaying a collection of films. The application fetches film data from an external API and displays it in a user-friendly interface. Users can search, filter, and view detailed information about each film.
+FilmApp is a React-based web application designed to manage and display a collection of films. The application allows users to perform CRUD (Create, Read, Update, Delete) operations on the film database, enhancing the user experience with features like searching for films, displaying film details, and a dynamic homepage with a hero slider.
 
 ## Features
 
-- Display a list of films with detailed information
-- Search films by title
-- Filter films by various criteria
-- Responsive design for mobile and desktop
+- CRUD Operations: Users can add, edit, delete, and search for films.
+- Search Functionality: Users can search films by various attributes such as ID, title, year, director, and stars.
+- Dynamic Homepage: The homepage features a hero slider that displays a random selection of movies, along with an AJAX-powered search bar for immediate interaction.
+- Pagination: To maintain site responsiveness and manage database query efficiency, the film list page initially displays only 24 films and provides pagination for exploring more films.
+- Flexible Data Formats: The application supports various data formats (JSON, XML, TEXT) for displaying film data, ensuring versatility in data handling.
+- Responsive Design: The application is built with responsiveness in mind, providing a consistent user experience across different devices.
 
 ## Technologies Used
 
-- **Frontend:** React, Vite
-- **Backend:** Node.js, Express (for proxy server)
-- **Styling:** CSS, Tailwind CSS
-- **API:** The Movie Database (TMDb) API
+- Programming Languages: JavaScript (ES6+)
+- Frameworks/Libraries: React.js, Axios, Bootstrap, Lottie
+- Development Tools: Vite (for development)
+- Backend Integration: RESTful API (FilmRestful) for managing film data
+- Database: MySQL (via RESTful API)
+- IDE: Visual Studio Code
 
 ## Getting Started
 
