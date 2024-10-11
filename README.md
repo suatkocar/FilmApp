@@ -1,4 +1,4 @@
-# [FilmApp (Javascript Web Application))](https://suatkocar.dev/FilmApp/)
+# [FilmApp (Javascript Web Application)](https://suatkocar.dev/FilmApp/)
 
 ## Home Page
 
